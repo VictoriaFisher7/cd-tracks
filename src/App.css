@@ -1,38 +1,65 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal-content{
+  width: 500px;
+  background-color: aliceblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-header{
+  padding-left: 20px;
+  font-size: 30px;
+  padding-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.modal-title{
+  margin: 0;
+}
+
+.app-body{
+  padding-left: 20px;
+
+}
+.app-song-list{
+  padding-left: 30px;
+
+}
+
+input, label{
+  display: block;
+
+}
+
+
+.add-button{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  border-color: deepskyblue;
+  border-radius: 3px;
+  color: deepskyblue;
+  width: 70px;
+  height: 35px;
+  position: relative;
+  left: 20px;
+  top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+h3{
+  margin-bottom: -20px;
+}
+.title{
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul{
+  padding-left: 10px;
+}
+
+.add-button img {
+  width: 20px; 
+  height: 20px;
+  margin-right: 5px;
 }
