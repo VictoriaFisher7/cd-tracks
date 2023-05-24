@@ -7,8 +7,7 @@ const AlbumForm = props => {
   const [albumTitle, setAlbumTitle] = useState('');
   const [artist, setArtist] = useState('');
   const [trackList, setTrackList] = useState('');
-  //not working
-  const [shouldShow, setShouldShow] = useState(true);
+
 
   const handleAlbumTitleChange = (event) => {
     setAlbumTitle(event.target.value);
@@ -25,7 +24,7 @@ const AlbumForm = props => {
   const handleSubmit = async (event) => {
     event.preventDefault();
   
-    // Extract the form data
+    // Get the form data
     const formData = {
       title: albumTitle,
       artist: artist,
@@ -39,11 +38,9 @@ const AlbumForm = props => {
     'Content-Type': 'application/json'
   }
 });
-    //refresh fist page with response here with reponse here 
+    //refresh fist page with response
     window.location.reload();
-    console.log(response.data); // Handle the response
-    console.log(JSON.stringify(formData))
-      // Perform any additional actions or update the state if needed
+    console.log(response.data); // see whats going on 
     } catch (error) {
       console.error(error); // Handle the error
     }

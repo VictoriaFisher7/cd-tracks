@@ -14,6 +14,7 @@ useEffect(() => {
   fetchData();
 }, []);
 
+//Grab the data from the database
 const fetchData = async () => {
   try {
     const response = await axios.get('http://localhost:3001/cds');
@@ -50,8 +51,6 @@ const fetchData = async () => {
         <p>No albums added yet.</p>
       )}
       </div>
-    
-      {/* imagne tag */}
       <button className='add-button' onClick={() => setShow(!show)}>
         <div>
           <img src={addImage} alt="Add Image" />
